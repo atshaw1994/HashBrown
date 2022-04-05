@@ -152,17 +152,10 @@ namespace HashBrown
         {
             if (KnownMD5Input.Text is not null)
             {
-                if (KnownMD5Input.Text.Equals(CalculatedMD5.Text))
-                {
-                    CheckMD5Result.Text = "Pass!";
-                    CheckMD5Result.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    CheckMD5Result.Text = "Fail!";
-                    CheckMD5Result.Visibility = Visibility.Visible;
-                }
+                MD5Result_Border.Visibility = Visibility.Visible;
+                CheckMD5Result.Visibility = Visibility.Visible;
                 CheckMD5.Visibility = Visibility.Collapsed;
+                CheckMD5Result.Text = KnownMD5Input.Text.Equals(CalculatedMD5.Text) ? "Pass!" : "Fail!";
             }
         }
 
@@ -255,6 +248,12 @@ namespace HashBrown
 
         private void GPVL3_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+        }
+
+        private void Calculated_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Clipboard.SetText((sender as TextBlock)!.Text.ToString());
+            MessageBox.Show("Copied to clipboard!");
         }
     }
 }
