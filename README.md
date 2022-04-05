@@ -1,4 +1,5 @@
-![HashBrown Logo](/HashBrown/hash-browns.png?raw=true)
+
+<img src="/HashBrown/hash-browns.png" width="48">
 # HashBrown
 A simple hashing utility allowing users to check their downloaded files' hashes against 'known good' hashes.
 
