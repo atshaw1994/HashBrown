@@ -162,6 +162,7 @@ namespace HashBrown
                     CheckMD5Result.Text = "Fail!";
                     CheckMD5Result.Visibility = Visibility.Visible;
                 }
+                CheckMD5.Visibility = Visibility.Collapsed;
             }
         }
 
