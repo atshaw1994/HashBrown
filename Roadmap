@@ -1,0 +1,9 @@
+Roadmap for HashBrown
+
+● Finalize UI 
+● Documentation
+● Source restructuring 
+*clean up resource dictionaries and naming conventions*
+● Sync other Check Button click methods to MD5's click method. 
+● Installer or portable utility?
+*will there be an installer or just portable utility like Rufus upon final release?*
