@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>HashBrown.App</StartupObject>
+    <ApplicationIcon>HashBrown.ico</ApplicationIcon>
+    <Authors></Authors>
+    <Company></Company>
+    <PackageIcon>HashBrown.ico</PackageIcon>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright>2022</Copyright>
+    <Description>A simple hash security utility.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="gpl-3.0.txt" />
+    <None Remove="gplv3.png" />
+    <None Remove="hash-browns.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="gpl-3.0.txt" />
+    <Content Include="HashBrown.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="gplv3.png" />
+    <Resource Include="hash-browns.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HashBrown.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

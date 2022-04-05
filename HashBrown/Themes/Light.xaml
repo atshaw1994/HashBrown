@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <LinearGradientBrush x:Key="Global.Background" EndPoint="0,0" StartPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#e8edf9" Offset="0"/>
+            <GradientStop Color="#d8e1f5" Offset=".7"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Global.Foreground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="MDL2Button.Overlay" Color="#60000000" />
+
+    <SolidColorBrush x:Key="Button.Background" Color="#e1e1e1"/>
+    <SolidColorBrush x:Key="Button.Foreground" Color="Black"/>
+    <SolidColorBrush x:Key="Button.Border" Color="#adadad"/>
+    <SolidColorBrush x:Key="Button.Background.MouseOver" Color="#e5f1fb"/>
+    <SolidColorBrush x:Key="Button.Border.MouseOver" Color="#0078d7"/>
+    <SolidColorBrush x:Key="Button.Background.Pressed" Color="#cce4f7"/>
+    <SolidColorBrush x:Key="Button.Border.Pressed" Color="#005499"/>
+    <SolidColorBrush x:Key="Button.Background.Disabled" Color="#d7d7d7"/>
+    <SolidColorBrush x:Key="Button.Border.Disabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="Button.Foreground.Disabled" Color="Gray"/>
+
+    <LinearGradientBrush x:Key="TabItem.Static.Background" StartPoint="0,0" EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFFCFCFE" Offset="0"/>
+            <GradientStop Color="#FFF4F3EE" Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TabItem.Static.Border" Color="#879BB3"/>
+    <SolidColorBrush x:Key="TabItem.MouseOver.Background" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="#879BB3"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#FCFCFE"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#879BB3"/>
+
+    <SolidColorBrush x:Key="TextBox.Background" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TextBox.Foreground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="TextBox.Static.Border" Color="#A7A6AA"/>
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+    <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+</ResourceDictionary>
