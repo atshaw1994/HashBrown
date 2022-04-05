@@ -163,16 +163,10 @@ namespace HashBrown
         {
             if (KnownSHA1Input.Text is not null)
             {
-                if (KnownSHA1Input.Text.Equals(CalculatedSHA1.Text))
-                {
-                    CheckSHA1Result.Text = "Pass!";
-                    CheckSHA1Result.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    CheckSHA1Result.Text = "Fail!";
-                    CheckSHA1Result.Visibility = Visibility.Visible;
-                }
+                SHA1Result_Border.Visibility = Visibility.Visible;
+                CheckSHA1Result.Visibility = Visibility.Visible;
+                CheckSHA1.Visibility = Visibility.Collapsed;
+                CheckSHA1Result.Text = KnownSHA1Input.Text.Equals(CalculatedSHA1.Text) ? "Pass!" : "Fail!";
             }
         }
 
@@ -180,16 +174,10 @@ namespace HashBrown
         {
             if (KnownSHA256Input.Text is not null)
             {
-                if (KnownSHA256Input.Text.Equals(CalculatedSHA256.Text))
-                {
-                    CheckSHA256Result.Text = "Pass!";
-                    CheckSHA256Result.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    CheckSHA256Result.Text = "Fail!";
-                    CheckSHA256Result.Visibility = Visibility.Visible;
-                }
+                SHA256Result_Border.Visibility = Visibility.Visible;
+                CheckSHA256Result.Visibility = Visibility.Visible;
+                CheckSHA256.Visibility = Visibility.Collapsed;
+                CheckSHA256Result.Text = KnownSHA256Input.Text.Equals(CalculatedSHA256.Text) ? "Pass!" : "Fail!";
             }
         }
 
