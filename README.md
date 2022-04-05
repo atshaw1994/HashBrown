@@ -4,6 +4,6 @@ A simple hashing utility allowing users to check their downloaded files' hashes 
 
 Coded in WPF/XAML C# using .Net Core 6 LTS. 
 
-![HashBrown Screenshot](/HashBrown/HashBrown-Screenshot.png?raw=true)
+![HashBrown Screenshot](/HashBrown/HashBrown-Screenshot.png)
 
 *App is NOT READY for final release. Bugs may be present.*
