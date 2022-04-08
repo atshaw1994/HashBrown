@@ -1,9 +1,7 @@
 # Roadmap for HashBrown
 
-**Finalize UI**
+**Finalize UI**: Work out kinks in UI
 
-**Documentation**
+**Documentation**: Add full documentation closer to release
 
-**Source restructuring** 
-
-Clean up resource dictionaries and naming conventions
+**Source restructuring**: Clean up resource dictionaries and naming conventions
