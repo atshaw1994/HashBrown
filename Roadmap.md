@@ -5,6 +5,5 @@
 **Documentation**
 
 **Source restructuring** 
-
-**Clean up resource dictionaries and naming conventions**
+Clean up resource dictionaries and naming conventions
 
