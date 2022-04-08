@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
@@ -39,7 +40,10 @@ namespace HashBrown
             Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative);
             // Update icon to reflect changes
             (ThemeButton.Content as TextBlock)!.Text = "\xEB4F";
-
+            // Update the Version display on AboutOverlay
+            VersionDisplay.Text = Environment.Is64BitOperatingSystem
+                ? $"Version: {Assembly.GetExecutingAssembly().GetName().Version!.ToString(2)}_{File.GetCreationTime(Assembly.GetExecutingAssembly().Location):yyyyMMdd}_x64"
+                : $"Version: {Assembly.GetExecutingAssembly().GetName().Version!.ToString(2)}_{File.GetCreationTime(Assembly.GetExecutingAssembly().Location):yyyyMMdd}_x86";
         }
 
         private void MD5worker_DoWork(object sender, DoWorkEventArgs e) => MD5Hash = CalculateMD5(FilePath).ToUpper();
