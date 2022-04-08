@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <SolidColorBrush x:Key="Global.Background" Color="#24262b"/>
-    <SolidColorBrush x:Key="Global.Foreground" Color="#FFF1F1F1"/>
+    <SolidColorBrush x:Key="Global.Foreground" Color="#60ffffff"/>
     <SolidColorBrush x:Key="MDL2Button.Overlay" Color="#10ffffff" />
 
     <SolidColorBrush x:Key="Button.Background" Color="#3F3F46"/>
