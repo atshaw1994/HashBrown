@@ -219,15 +219,9 @@ namespace HashBrown
             }
         }
 
-        private void AboutButton_Click(object sender, RoutedEventArgs e)
-        {
-            AboutOverlay.Visibility = Visibility.Visible;
-        }
+        private void AboutButton_Click(object sender, RoutedEventArgs e) => AboutOverlay.Visibility = Visibility.Visible;
 
-        private void AboutOverlay_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            AboutOverlay.Visibility = Visibility.Collapsed;
-        }
+        private void AboutOverlay_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => AboutOverlay.Visibility = Visibility.Collapsed;
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
@@ -247,11 +241,6 @@ namespace HashBrown
         {
             Clipboard.SetText((sender as TextBlock)!.Text.ToString());
             MessageBox.Show("Copied to clipboard!");
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(Height.ToString());
         }
     }
 }
