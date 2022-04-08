@@ -8,9 +8,11 @@
         Background="{DynamicResource Global.Background}"
         Foreground="{DynamicResource Global.Foreground}"
         Title="HashBrown" 
-        SizeToContent="Height"
-        Width="350">
-    <Grid x:Name="baseWindow_Grid">
+        Width="350"
+        MaxHeight="305"
+        MinHeight="305">
+    
+    <Grid x:Name="baseWindow_Grid" Height="300">
         <Button x:Name="ThemeButton" Click="ThemeButton_Click" Style="{DynamicResource ThemeButton}"/>
         <Button x:Name="AboutButton" Click="AboutButton_Click" Style="{DynamicResource AboutButton}"/>
         <StackPanel x:Name="ContentArea">

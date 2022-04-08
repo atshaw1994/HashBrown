@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <SolidColorBrush x:Key="Global.Background" Color="#FF252526"/>
+    <SolidColorBrush x:Key="Global.Background" Color="#24262b"/>
     <SolidColorBrush x:Key="Global.Foreground" Color="#FFF1F1F1"/>
     <SolidColorBrush x:Key="MDL2Button.Overlay" Color="#10ffffff" />
 
@@ -15,12 +15,12 @@
     <SolidColorBrush x:Key="Button.Border.Disabled" Color="#FF252526"/>
     <SolidColorBrush x:Key="Button.Foreground.Disabled" Color="#FF656565"/>
 
-    <SolidColorBrush x:Key="TabItem.Static.Background" Color="#FF252526"/>
-    <SolidColorBrush x:Key="TabItem.Static.Border" Color="#BEBEBE"/>
-    <SolidColorBrush x:Key="TabItem.MouseOver.Background" Color="#FF3E3E40"/>
+    <SolidColorBrush x:Key="TabItem.Static.Background" Color="#24262b"/>
+    <SolidColorBrush x:Key="TabItem.Static.Border" Color="#2295ff"/>
+    <SolidColorBrush x:Key="TabItem.Hover.Background" Color="#2d2e33"/>
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="#FF3E3E40"/>
-    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#3B3B3C"/>
-    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#FF3E3E40"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#353539"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#2295ff"/>
 
     <SolidColorBrush x:Key="TextBox.Background" Color="#FF333337"/>
     <SolidColorBrush x:Key="TextBox.Foreground" Color="#FFF1F1F1"/>

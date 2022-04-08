@@ -98,25 +98,17 @@
                         <ContentPresenter x:Name="contentPresenter" ContentSource="Header" Focusable="False" HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
-                                <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
-                            </MultiDataTrigger.Conditions>
+                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false">
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,0,0,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,0,0,1"/>
-                        </MultiDataTrigger>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
-                                <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
-                            </MultiDataTrigger.Conditions>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true">
                             <Setter Property="Panel.ZIndex" Value="1"/>
                             <Setter Property="Margin" Value="-2,-2,0,0"/>
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,0,0,0"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
-                        </MultiDataTrigger>
+                        </DataTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
