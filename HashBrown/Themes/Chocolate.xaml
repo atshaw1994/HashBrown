@@ -26,8 +26,8 @@
         <GradientStop Color="#10c4c4c4" Offset="1"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="Button.Foreground.Disabled" Color="#40000000"/>
-    
-    <SolidColorBrush x:Key="TabItem.Static.Background" Color="#7B5246"/>
+
+    <SolidColorBrush x:Key="TabItem.Static.Background" Color="#6C3F31"/>
     <SolidColorBrush x:Key="TabItem.Static.Border" Color="#98796F"/>
     <SolidColorBrush x:Key="TabItem.MouseOver.Background" Color="#FFC9DEF5"/>
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="#FFF5F5F5"/>
