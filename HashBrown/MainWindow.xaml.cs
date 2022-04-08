@@ -246,5 +246,7 @@ namespace HashBrown
             Clipboard.SetText((sender as TextBlock)!.Text.ToString());
             MessageBox.Show("Copied to clipboard!");
         }
+
+        private void CloseAboutOverlay_Click(object sender, RoutedEventArgs e) => AboutOverlay.Visibility = Visibility.Collapsed;
     }
 }
