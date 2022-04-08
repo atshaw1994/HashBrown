@@ -6,4 +6,3 @@
 
 **Source restructuring** 
 Clean up resource dictionaries and naming conventions
-
