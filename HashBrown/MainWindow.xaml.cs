@@ -35,6 +35,11 @@ namespace HashBrown
             SHA1worker.RunWorkerCompleted += SHA1worker_RunWorkerCompleted!;
             SHA256worker.DoWork += SHA256worker_DoWork!;
             SHA256worker.RunWorkerCompleted += SHA256worker_RunWorkerCompleted!;
+            // Set Chocolate.xaml as current theme
+            Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative);
+            // Update icon to reflect changes
+            (ThemeButton.Content as TextBlock)!.Text = "\xEB4F";
+
         }
 
         private void MD5worker_DoWork(object sender, DoWorkEventArgs e) => MD5Hash = CalculateMD5(FilePath).ToUpper();
@@ -199,7 +204,7 @@ namespace HashBrown
             // Light
             else if (ThemeSelection == 1) 
             {
-                // Set Dark.xaml as current theme
+                // Set Light.xaml as current theme
                 Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Light.xaml", UriKind.Relative); 
                 // Update icon to reflect changes
                 (ThemeButton.Content as TextBlock)!.Text = "\xEB4F"; 
@@ -207,7 +212,7 @@ namespace HashBrown
             // Chocolate
             else
             {
-                // Set Dark.xaml as current theme
+                // Set Chocolate.xaml as current theme
                 Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative); 
                 // Update icon to reflect changes
                 (ThemeButton.Content as TextBlock)!.Text = "\xEB4F"; 
@@ -242,6 +247,11 @@ namespace HashBrown
         {
             Clipboard.SetText((sender as TextBlock)!.Text.ToString());
             MessageBox.Show("Copied to clipboard!");
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Height.ToString());
         }
     }
 }
