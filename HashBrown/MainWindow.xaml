@@ -35,7 +35,7 @@
                         </Border>
                     </StackPanel>
                 </TabItem>
-                <TabItem Style="{DynamicResource TabItemStyle}" Header="SHA1" Background="{DynamicResource TabItem.Static.Background}">
+                <TabItem Style="{DynamicResource TabItemStyle}" Header="SHA1">
                     <StackPanel Background="{DynamicResource TabItem.Selected.Background}">
                         <TextBlock Text="Calculated SHA1:" Margin="8,8,8,0" FontSize="14"/>
                         <Button x:Name="PerformSHA1" Click="PerformSHA1_Click" Content="Calculate" IsEnabled="False" Height="32"/>
@@ -50,7 +50,7 @@
                         </Border>
                     </StackPanel>
                 </TabItem>
-                <TabItem Style="{DynamicResource TabItemStyle}" Header="SHA256" Background="{DynamicResource TabItem.Static.Background}">
+                <TabItem Style="{DynamicResource TabItemStyle}" Header="SHA256">
                     <StackPanel Background="{DynamicResource TabItem.Selected.Background}">
                         <TextBlock Text="Calculated SHA256:" Margin="8,8,8,0" FontSize="14"/>
                         <Button x:Name="PerformSHA256" Click="PerformSHA256_Click" Content="Calculate" IsEnabled="False" Height="32"/>
