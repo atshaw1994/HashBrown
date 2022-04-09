@@ -15,7 +15,6 @@
     <SolidColorBrush x:Key="Button.Border.Disabled" Color="#FF252526"/>
     <SolidColorBrush x:Key="Button.Foreground.Disabled" Color="#FF656565"/>
 
-    <SolidColorBrush x:Key="TabItem.Static.Background" Color="#24262b"/>
     <SolidColorBrush x:Key="TabItem.Static.Border" Color="#2295ff"/>
     <SolidColorBrush x:Key="TabItem.Hover.Background" Color="#2d2e33"/>
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="#FF3E3E40"/>
