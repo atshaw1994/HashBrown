@@ -164,7 +164,7 @@ namespace HashBrown
                 MD5Result_Border.Visibility = Visibility.Visible;
                 CheckMD5Result.Visibility = Visibility.Visible;
                 CheckMD5.Visibility = Visibility.Collapsed;
-                CheckMD5Result.Text = KnownMD5Input.Text.Equals(CalculatedMD5.Text) ? "Pass!" : "Fail!";
+                CheckMD5Result.Text = KnownMD5Input.Text.ToUpper().Equals(CalculatedMD5.Text.ToUpper()) ? "Pass!" : "Fail!";
             }
         }
 
@@ -175,7 +175,7 @@ namespace HashBrown
                 SHA1Result_Border.Visibility = Visibility.Visible;
                 CheckSHA1Result.Visibility = Visibility.Visible;
                 CheckSHA1.Visibility = Visibility.Collapsed;
-                CheckSHA1Result.Text = KnownSHA1Input.Text.Equals(CalculatedSHA1.Text) ? "Pass!" : "Fail!";
+                CheckSHA1Result.Text = KnownSHA1Input.Text.ToUpper().Equals(CalculatedSHA1.Text.ToUpper()) ? "Pass!" : "Fail!";
             }
         }
 
@@ -186,7 +186,7 @@ namespace HashBrown
                 SHA256Result_Border.Visibility = Visibility.Visible;
                 CheckSHA256Result.Visibility = Visibility.Visible;
                 CheckSHA256.Visibility = Visibility.Collapsed;
-                CheckSHA256Result.Text = KnownSHA256Input.Text.Equals(CalculatedSHA256.Text) ? "Pass!" : "Fail!";
+                CheckSHA256Result.Text = KnownSHA256Input.Text.ToUpper().Equals(CalculatedSHA256.Text.ToUpper()) ? "Pass!" : "Fail!";
             }
         }
 
