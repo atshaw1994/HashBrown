@@ -26,4 +26,45 @@
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FF434346"/>
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+
+    <!-- CaptionBar -->
+    <SolidColorBrush x:Key="CaptionBar_Title_Active" Color="White"/>
+    <SolidColorBrush x:Key="CaptionBar_Title_Inactive" Color="#a7a7a7"/>
+    <LinearGradientBrush x:Key="CaptionBar_Background" StartPoint="0,1" EndPoint="0,0">
+        <GradientStop Color="Black" Offset="0.0"/>
+        <GradientStop Color="#101010" Offset="0.3"/>
+        <GradientStop Color="#303030" Offset="0.4"/>
+        <GradientStop Color="#101010" Offset="0.9"/>
+        <GradientStop Color="Black" Offset="1.0"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="CaptionBar_Border" Color="#202020"/>
+    <!-- CaptionBar Button -->
+    <LinearGradientBrush x:Key="CaptionBar_Button_Background" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#80ffffff" Offset="0.0"/>
+        <GradientStop Color="#20ffffff" Offset="0.6"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CaptionBar_Button_Border" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#20000000" Offset="0.0"/>
+        <GradientStop Color="#08000000" Offset="0.8"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CaptionBar_Button_Background_Disabled" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#30ffffff" Offset="0.0"/>
+        <GradientStop Color="#10000000" Offset="0.6"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CaptionBar_Button_Border_Disabled" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#10000000" Offset="0.0"/>
+        <GradientStop Color="#04000000" Offset="0.8"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="CaptionBar_Button_Glyph" Color="#20ffffff"/>
+    <SolidColorBrush x:Key="CaptionBar_Button_Glyph_MouseOver" Color="Black"/>
+    <SolidColorBrush x:Key="CaptionBar_CloseButton_Glyph_MouseOver" Color="#c4ffffff"/>
+    <SolidColorBrush x:Key="CaptionBar_Button_Glyph_Disabled" Color="#30000000"/>
+    <Color x:Key="CaptionBar_Button_Background_MouseOver">#e5e5e5</Color>
+    <Color x:Key="CaptionBar_Button_Border_MouseOver">#a4D8D8D8</Color>
+    <Color x:Key="CaptionBar_Button_Background_Pressed">#BDBDBE</Color>
+    <Color x:Key="CaptionBar_Button_Border_Pressed">#cacacb</Color>
+    <Color x:Key="CaptionBar_CloseButton_Background_MouseOver">#e81123</Color>
+    <Color x:Key="CaptionBar_CloseButton_Background_MouseOver2">#B90D1C</Color>
+    <Color x:Key="CaptionBar_CloseButton_Background_Pressed">#6F0810</Color>
+    <Color x:Key="CaptionBar_CloseButton_Background_Pressed2">#8b0a14</Color>
 </ResourceDictionary>

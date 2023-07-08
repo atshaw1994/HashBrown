@@ -6,9 +6,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Themes\Light.xaml"/>
+                <ResourceDictionary Source="Themes\Chocolate.xaml"/>
                 <ResourceDictionary Source="ControlStyles.xaml"/>
                 <ResourceDictionary Source="Glyphs.xaml"/>
+                <ResourceDictionary Source="CaptionBar.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
