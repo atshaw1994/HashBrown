@@ -14,10 +14,30 @@
         SizeToContent="Height">
     
     <Grid x:Name="baseWindow_Grid" >
-        <Button x:Name="ThemeButton" Click="ThemeButton_Click" Style="{DynamicResource ThemeButton}"/>
-        <Button x:Name="AboutButton" Click="AboutButton_Click" Style="{DynamicResource AboutButton}"/>
+        <Button x:Name="ThemeButton" 
+                Click="ThemeButton_Click" 
+                Style="{DynamicResource ThemeButton}">
+            <Path x:Name="ThemeButton_Glyph" 
+                    Width="18"
+                    Height="18"
+                    Stretch="Fill"
+                    Fill="{DynamicResource MDL2Button.Overlay}"
+                    Data="{DynamicResource ThemeButton_Light}">
+            </Path>
+        </Button>
+        <Button x:Name="AboutButton" 
+                Click="AboutButton_Click" 
+                Style="{DynamicResource AboutButton}">
+            <Path x:Name="AboutButton_Glyph" 
+                    Width="18"
+                    Height="18"
+                    Stretch="Fill"
+                    Fill="{DynamicResource MDL2Button.Overlay}"
+                    Data="{DynamicResource AboutButton_Glyph}">
+            </Path>
+        </Button>
         <StackPanel x:Name="ContentArea">
-            <TextBlock Text="File:" FontSize="14" Margin="8,8,32,0"/>
+            <TextBlock Text="File:" FontSize="14" Margin="8,8,64,0"/>
             <Button x:Name="OpenFileButton" Content="Browse..." Click="OpenFileButton_Click" Height="32"/>
             <TabControl x:Name="baseTabControl" Style="{DynamicResource TabControlStyle}">
                 <TabItem Style="{DynamicResource TabItemStyle}" Header="MD5">

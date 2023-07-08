@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes\Light.xaml"/>
                 <ResourceDictionary Source="ControlStyles.xaml"/>
+                <ResourceDictionary Source="Glyphs.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -7,7 +7,9 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace HashBrown
 {
@@ -39,7 +41,7 @@ namespace HashBrown
             // Set Chocolate.xaml as current theme
             Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative);
             // Update icon to reflect changes
-            (ThemeButton.Content as TextBlock)!.Text = "\xEB4F";
+            ThemeButton_Glyph.Data = (FindResource("ThemeButton_Chocolate") as Geometry);
             // Update the Version display on AboutOverlay
             VersionDisplay.Text = Environment.Is64BitOperatingSystem
                 ? $"Version: {Assembly.GetExecutingAssembly().GetName().Version!.ToString(2)}_{File.GetCreationTime(Assembly.GetExecutingAssembly().Location):yyyyMMdd}_x64"
@@ -192,34 +194,33 @@ namespace HashBrown
 
         private void ThemeButton_Click(object sender, RoutedEventArgs e)
         {
+            Trace.WriteLine("ThemeButton Clicked!");
             // Make ThemeSelection variable roll around
             if (ThemeSelection < 2) ThemeSelection++;
             else ThemeSelection = 0;
-
             // Dark
             if (ThemeSelection == 0) 
             {
                 // Set Dark.xaml as current theme
-                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Dark.xaml", UriKind.Relative); 
+                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Dark.xaml", UriKind.Relative);
                 // Update icon to reflect changes
-                (ThemeButton.Content as TextBlock)!.Text = "\xEA80";  
-
+                ThemeButton_Glyph.Data = (FindResource("ThemeButton_Dark") as Geometry);
             }
             // Light
             else if (ThemeSelection == 1) 
             {
                 // Set Light.xaml as current theme
-                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Light.xaml", UriKind.Relative); 
+                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Light.xaml", UriKind.Relative);
                 // Update icon to reflect changes
-                (ThemeButton.Content as TextBlock)!.Text = "\xEB4F"; 
+                ThemeButton_Glyph.Data = (FindResource("ThemeButton_Light") as Geometry);
             }
             // Chocolate
             else
             {
                 // Set Chocolate.xaml as current theme
-                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative); 
+                Application.Current.Resources.MergedDictionaries[0].Source = new Uri($"/Themes/Chocolate.xaml", UriKind.Relative);
                 // Update icon to reflect changes
-                (ThemeButton.Content as TextBlock)!.Text = "\xEB4F"; 
+                ThemeButton_Glyph.Data = (FindResource("ThemeButton_Chocolate") as Geometry);
             }
         }
 
