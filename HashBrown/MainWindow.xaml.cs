@@ -194,7 +194,6 @@ namespace HashBrown
 
         private void ThemeButton_Click(object sender, RoutedEventArgs e)
         {
-            Trace.WriteLine("ThemeButton Clicked!");
             // Make ThemeSelection variable roll around
             if (ThemeSelection < 2) ThemeSelection++;
             else ThemeSelection = 0;
